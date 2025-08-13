@@ -77,3 +77,14 @@ function willSuccess(marks) {
 }
 console.log(willSuccess(marks));
 
+let male = { name: "Rahul", gender: "male", age: 22 };
+let female = { name: "Joya", gender: "female", age: 32 };
+
+function biyeKiHobe(male, female) {
+  if (male.gender !== female.gender && Math.abs(male.age - female.age)  <= 7) {
+    return true;
+  }
+  return false
+}
+console.log(biyeKiHobe(male, female));
+
